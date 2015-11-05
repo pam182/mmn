@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <TextView
+        android:text="@string/fecha"
+        android:id="@+id/textView4"
+        style="@style/style_textView" />
+
+    <EditText
+        android:id="@+id/fecha_et"
+        style="@style/style_editText"/>
+
+    <TextView
+        android:text="@string/altura"
+        android:id="@+id/textView5"
+        style="@style/style_textView"/>
+
+    <EditText
+        android:id="@+id/altura_et"
+        style="@style/style_editText"/>
+
+    <TextView
+        android:text="@string/peso"
+        android:id="@+id/textView6"
+        style="@style/style_textView"/>
+
+    <EditText
+        android:id="@+id/peso_et"
+        style="@style/style_editText"/>
+
+    <TextView
+        android:text="@string/temperatura"
+        android:id="@+id/textView7"
+        style="@style/style_textView"/>
+
+    <EditText
+        android:id="@+id/temperatura_et"
+        style="@style/style_editText"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                style="@style/style_button"
+                android:id="@+id/aceptarButton"
+                android:text="@string/aceptar"
+                 />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                style="@style/style_button"
+                android:id="@+id/cancelarButton"
+                android:text="@string/cancelar"
+ />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
+
+

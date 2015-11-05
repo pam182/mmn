@@ -3,6 +3,8 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="android_icon">&#xf17b;</string>
+
 
     <!-- Lista de iconos de navegacion-->
     <array name="navigation_iconos">
@@ -14,6 +16,15 @@
         <item>@drawable/ic_action_settings</item>
         <item>@drawable/ic_action_share</item>
     </array>
+
+    <array name="menu_iconos">
+        <item>&#xf007;</item>
+        <item>&#xf0f6;</item>
+        <item>&#xf0f1;</item>
+        <item>&#xf15b;</item>
+        <item>&#xf085;</item>
+    </array>
+
     <!-- // -->
     <!-- Lista de titulos de navegacion-->
     <string-array name="nav_options">
@@ -42,6 +53,53 @@
         <item>Tab 3</item>
     </string-array>
 
+    <string-array name="tabs_usuario">
+        <item>Datos Personales</item>
+        <item>Datos Físicos</item>
+    </string-array>
+
+    <string-array name="tabs_antecedentes_enfermedades">
+        <item>Enfermedades Personales</item>
+        <item>Enfermedades Familiares</item>
+    </string-array>
+
+    <string-array name="tabs_visita_medica">
+        <item>Motivo de la Consulta</item>
+        <item>Exámenes Complementarios</item>
+        <item>Diagnóstico de Enfermedades</item>
+        <item>Tratamientos</item>
+    </string-array>
+
+    <string-array name="tabs_reportes">
+        <item>Completo</item>
+        <item>Exámenes Complementarios</item>
+        <item>Resumen</item>
+    </string-array>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nombre">Nombre :</string>
+    <string name="edad">Edad :</string>
+    <string name="estado_civil">Estado Civil :</string>
+    <string name="nacionalidad">Nacionalidad :</string>
+    <string name="ocupacion">Ocupacion :</string>
+    <string name="domicilio">Domicilio :</string>
+    <string name="responsable">Responsable :</string>
+    <string name="sexo">Sexo :</string>
+    <string name="fecha">Fecha :</string>
+    <string name="altura">Altura :</string>
+    <string name="peso">Peso :</string>
+    <string name="temperatura">Temperatura :</string>
+    <string name="parto">Parto :</string>
+    <string name="tipo_parto">Tipo de Parto :</string>
+    <string name="peso_nacer">Peso al nacer</string>
+    <string name="sintomas">Síntomas :</string>
+    <string name="titulo_examen">Título del Examen</string>
+    <string name="anadir">Añadir</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="antecedentes_fisiologicos">Antecedentes Fisiológicos</string>
+    <string name="antecedentes_ginoobstetricos">Antecedentes Ginoobstétricos</string>
+    <string name="antecedentes_patologicos">Antecedentes Patológicos</string>
+    <string name="embarazos">Embarazos</string>
 </resources>

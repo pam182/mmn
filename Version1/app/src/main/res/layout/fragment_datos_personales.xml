@@ -2,12 +2,103 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="View.usuario.DatosPersonalesFragment">
+    tools:context="View.configuracion.ConfiguracionFragment"
+    android:background="@drawable/fondo_fragment"
+    >
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView" >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="20dp">
+
+
+
+            <TextView
+                android:text="@string/nombre"
+                android:id="@+id/textView17"
+                style="@style/style_textView"
+                />
+
+            <EditText
+                android:id="@+id/editText4"
+                style="@style/style_editText"/>
+
+            <TextView
+                android:text="@string/edad"
+                android:id="@+id/textView18"
+                style="@style/style_textView"/>
+
+            <EditText
+                android:id="@+id/editText5"
+                style="@style/style_editText"/>
+
+            <TextView
+                android:text="@string/estado_civil"
+                android:id="@+id/textView19"
+                style="@style/style_textView"/>
+
+            <EditText
+                android:id="@+id/editText6"
+                style="@style/style_editText"/>
+
+            <TextView
+                android:text="@string/nacionalidad"
+                android:id="@+id/textView20"
+                style="@style/style_textView"/>
+
+            <EditText
+                android:id="@+id/editText7"
+                style="@style/style_editText"/>
+
+            <TextView
+                android:text="@string/ocupacion"
+                android:id="@+id/textView21"
+                style="@style/style_textView"/>
+
+            <EditText
+                android:id="@+id/editText8"
+                style="@style/style_editText"/>
+
+            <TextView
+                android:text="@string/domicilio"
+                android:id="@+id/textView22"
+                style="@style/style_textView"/>
+
+            <EditText
+                android:id="@+id/editText9"
+                style="@style/style_editText"/>
+
+            <TextView
+                android:text="@string/responsable"
+                android:id="@+id/textView23"
+                style="@style/style_textView"/>
+
+            <EditText
+                android:id="@+id/editText10"
+                style="@style/style_editText"/>
+
+            <TextView
+                android:text="@string/sexo"
+                android:id="@+id/textView24"
+                style="@style/style_textView"/>
+
+            <EditText
+                android:id="@+id/editText11"
+                style="@style/style_editText"/>
+
+            <TextView
+                android:id="@+id/textView25"
+                style="@style/style_espacio_vertical"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
 
 </FrameLayout>

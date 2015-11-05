@@ -13,6 +13,10 @@ package com.pamela.zeballos.version1;
 
 import android.content.res.Configuration;
 import android.content.res.TypedArray;
+
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
+import android.graphics.drawable.Drawable;
 import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.ActionBarActivity;
@@ -44,6 +48,7 @@ public class MainActivity extends ActionBarActivity {
     private NavigationDrawerFragment mNavigationDrawerFragment;
 
     private String[] titulos;
+    private String[] titulos2;
     private DrawerLayout NavDrawerLayout;
     private ListView NavList;
     private ArrayList<Menu_Item> NavItms;
@@ -78,11 +83,12 @@ public class MainActivity extends ActionBarActivity {
         NavIcons = getResources().obtainTypedArray(R.array.navigation_iconos);
         //Tomamos listado  de titulos desde el string-array de los recursos @string/nav_options
         titulos = getResources().getStringArray(R.array.nav_options);
+        titulos2 = getResources().getStringArray(R.array.menu_iconos);
         //Listado de titulos de barra de navegacion
         NavItms = new ArrayList<Menu_Item>();
         //Agregamos objetos Item_objct al array
         //Perfil
-        NavItms.add(new Menu_Item(titulos[1], NavIcons.getResourceId(0, -1)));
+        NavItms.add(new Menu_Item(titulos2[1], NavIcons.getResourceId(0, -1)));
         //Favoritos
         NavItms.add(new Menu_Item(titulos[2], NavIcons.getResourceId(1, -1)));
         //Eventos
@@ -96,6 +102,7 @@ public class MainActivity extends ActionBarActivity {
 
         //Declaramos y seteamos nuestrp adaptador al cual le pasamos el array con los titulos
         NavAdapter= new NavigationAdapter(this,NavItms);
+
         NavList.setAdapter(NavAdapter);
         //Siempre vamos a mostrar el mismo titulo
 
@@ -148,7 +155,7 @@ public class MainActivity extends ActionBarActivity {
 
         switch (position){
             case 0:
-                ft.replace(R.id.container, TabbedFragmentActivity.newInstance(position))
+                ft.replace(R.id.container, HomeFragment.newInstance(position))
                         .commit();
                 break;
             case 1:
@@ -199,6 +206,10 @@ public class MainActivity extends ActionBarActivity {
 
     public void restoreActionBar() {
         ActionBar actionBar = getSupportActionBar();
+        assert actionBar != null;
+//        actionBar.setBackgroundDrawable(new ColorDrawable(Color.RED));
+        actionBar.setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.tab_color)));
+
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_STANDARD);
         actionBar.setDisplayShowTitleEnabled(true);
         actionBar.setTitle(mTitle);
@@ -250,5 +261,6 @@ public class MainActivity extends ActionBarActivity {
         super.onConfigurationChanged(newConfig);
         mDrawerToggle.onConfigurationChanged(newConfig);
     }
+
 
 }

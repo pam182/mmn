@@ -1,13 +1,4 @@
-/**
- * Ejemplo de Navigation Drawer personalizado y Fragment con SwipeTabs
- *
- * Elaborado por Felipe Lima afelipelc@gmail.com marzo.2015
- * Basado en el ejemplo http://androideity.com/2013/12/16/android-navigation-drawer-parte-1/ -Nav Drawer-
- * y en http://www.paulusworld.com/technical/android-navigationdrawer-sliding-tabs -Tabs-
- *
- * El trabajo realizado consistio en unificar una aplicacion con estas caracteristicas ya que regularmente encontramos ejemplos con una sola caracteristica
- *
- */
+
 package com.pamela.zeballos.version1;
 
 import android.app.Activity;
@@ -125,9 +116,9 @@ public class TabbedFragmentActivity extends Fragment {
 
         @Override
         public CharSequence getPageTitle(int position) {
-            Locale l = Locale.getDefault();
+            Locale lo = Locale.getDefault();
             //get title from array strings as Title tab
-            return getResources().getStringArray(R.array.tabs_options)[position].toUpperCase(l);
+            return getResources().getStringArray(R.array.tabs_options)[position].toUpperCase(lo);
 
             //original
             /*

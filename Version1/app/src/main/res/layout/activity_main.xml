@@ -18,12 +18,12 @@
          the container. -->
     <ListView android:id="@+id/lista"
         android:layout_width="@dimen/navigation_drawer_width"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_gravity="start"
         android:choiceMode="singleChoice"
         android:divider="#2E2E2E"
         android:dividerHeight="2dp"
-        android:background="#424242"
+        android:background="@drawable/fondo_menu2"
         android:textColor="#424242"
         />
 

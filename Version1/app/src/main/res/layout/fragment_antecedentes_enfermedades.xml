@@ -1,14 +1,27 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pager"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="View.antecedentesEnfermedades.AntecedentesEnfermedadesFragment">
+    tools:context=".TabbedActivity" >
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <!--
+    This title strip will display the currently visible page title, as well as the page
+    titles for adjacent pages.
+    -->
+
+    <android.support.v4.view.PagerTabStrip
+        android:id="@+id/pager_title_strip"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="fragmento antecedentes de enfermedades
-        " />
+        android:layout_height="40sp"
+        android:layout_gravity="top"
+        android:background="#666633"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp"
+        android:textColor="#fff" />
 
-</FrameLayout>
+</android.support.v4.view.ViewPager>
+
+
+

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="tab_color">#333300</color>
+    <color name="myPrimaryColor">#37474F</color>
+    <color name="myPrimaryDarkColor">#263238</color>
+    <color name="myAccentColor">#6ef077</color>
+    <color name="myDrawerBackground">#FFF</color>
+    <color name="myWindowBackground">#FFF</color>
+    <color name="myTextPrimaryColor">#212121</color>
+    <color name="myNavigationColor">#000</color>
+
+    <color name="myTextColor">#212121</color>
+    <color name="mySecondaryTextColor">#727272</color>
+    <color name="myDisabledTextColor">#B8B8B8</color>
+    <color name="myHintTextColor">#B8B8B8</color>
+    <color name="myDividerColor">#DADADA</color>
+    <color name="color_title">#F02E831A</color>
+
+    <drawable name="pressedGray">#0a000000</drawable>
+    <drawable name="selectedGray">#14000000</drawable>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="listen_title">#FF7A9AA6</color>
+
+</resources>

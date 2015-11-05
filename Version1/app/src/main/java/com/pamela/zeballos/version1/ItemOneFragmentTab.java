@@ -1,14 +1,14 @@
 package com.pamela.zeballos.version1;
 
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
-/**
- * Created by felipe on 4/03/15.
- */
+
 public class ItemOneFragmentTab extends Fragment {
     /**
      * The fragment argument representing the section number for this
@@ -24,12 +24,12 @@ public class ItemOneFragmentTab extends Fragment {
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_tab_one,
                 container, false);
-        /*
-        TextView dummyTextView = (TextView) rootView
-                .findViewById(R.id.section_label);
-        dummyTextView.setText(Integer.toString(getArguments().getInt(
-                ARG_SECTION_NUMBER)));*/
 
+        TextView dummyTextView = (TextView) rootView
+                .findViewById(R.id.textView);
+        Typeface font = Typeface.createFromAsset(getActivity().getAssets(), "fontawesome-webfont.ttf");
+dummyTextView.setTypeface(font);
         return rootView;
     }
 }
+
