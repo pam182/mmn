@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TextView
+        android:text="@string/descripcion_tratamiento"
+        android:id="@+id/textView4"
+        style="@style/style_textView" />
+
+    <EditText
+        android:id="@+id/fecha_et"
+        style="@style/style_editText"/>
+
+    <TextView
+        style="@style/style_textView"
+        android:text="@string/nombre_medicamento"
+        android:id="@+id/textView12"/>
+
+    <EditText
+        style="@style/style_editText"
+        android:id="@+id/editText13"/>
+
+    <TextView
+        style="@style/style_textView"
+        android:text="@string/dosis"
+        android:id="@+id/textView13"/>
+
+    <EditText
+        style="@style/style_editText"
+        android:id="@+id/editText14"/>
+
+    <TextView
+        style="@style/style_textView"
+        android:text="@string/frecuencia_medicamento"
+        android:id="@+id/textView14"/>
+
+    <EditText
+        style="@style/style_editText"
+        android:id="@+id/editText15"/>
+
+    <TextView
+        style="@style/style_textView"
+        android:text="@string/fecha_inicio_tratamiento"
+        android:id="@+id/textView15"/>
+
+    <EditText
+        style="@style/style_editText"
+        android:id="@+id/editText16"/>
+
+    <TextView
+        style="@style/style_textView"
+        android:text="@string/fecha_fin_tratamiento"
+        android:id="@+id/textView16"/>
+
+    <EditText
+        style="@style/style_editText"
+        android:id="@+id/editText17"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                style="@style/style_icon_button"
+                android:id="@+id/aceptar"
+                android:text="@string/icon_aceptar" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                style="@style/style_icon_button"
+                android:id="@+id/cancelar"
+                android:text="@string/icon_cancelar"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+

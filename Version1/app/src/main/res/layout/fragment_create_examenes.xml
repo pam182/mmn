@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TextView
+        android:text="@string/titulo_examen"
+        android:id="@+id/textView4"
+        style="@style/style_textView" />
+
+    <EditText
+        android:id="@+id/fecha_et"
+        style="@style/style_editText"/>
+
+    <TextView
+        style="@style/style_textView"
+        android:text="@string/resultado_examen"
+        android:id="@+id/textView10" />
+
+    <EditText
+        style="@style/style_editText"
+        android:id="@+id/editText2"/>
+
+    <TextView
+        style="@style/style_textView"
+        android:text="@string/fecha"
+        android:id="@+id/textView11"/>
+
+    <EditText
+        style="@style/style_editText"
+        android:id="@+id/editText3" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <ImageButton
+            style="@style/style_icon_button"
+            android:id="@+id/button2"
+            android:src="@drawable/camera"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                style="@style/style_icon_button"
+                android:id="@+id/aceptar"
+                android:text="@string/icon_aceptar" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                style="@style/style_icon_button"
+                android:id="@+id/cancelar"
+                android:text="@string/icon_cancelar"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+

@@ -24,10 +24,10 @@
     </item>
 
     <item
-        android:bottom="4dp"
-        android:left="4dp"
-        android:right="4dp"
-        android:top="4dp">
+        android:bottom="2dp"
+        android:left="2dp"
+        android:right="2dp"
+        android:top="2dp">
         <shape android:shape="rectangle" >
             <gradient
                 android:angle="90"

@@ -42,6 +42,29 @@
         <item name="android:background">@drawable/button_background</item>
     </style>
 
+    <style name="style_item_list">
+        <item name="android:background">@drawable/shape_green_roundcorner</item>
+        <item name="android:alpha">0.7</item>
+    </style>
+
+    <style name="style_item_list_first">
+        <item name="android:textColor">#FFFFCC</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">10dp</item>
+    </style>
+    <style name="style_item_list_second">
+        <item name="android:textColor">#FFFFCC</item>
+        <item name="android:textSize">10dp</item>
+    </style>
+
+    <style name="style_icon_button">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#D6D6C2</item>
+        <item name="android:background">@drawable/button_icon_background</item>
+    </style>
+
     <style name="aceptar">Aceptar</style>
 
 

@@ -12,7 +12,7 @@ import com.pamela.zeballos.version1.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class DatosPersonalesFragment extends Fragment {
+public class DatosPersonalesFragment extends Fragment{
 
 
     public DatosPersonalesFragment() {

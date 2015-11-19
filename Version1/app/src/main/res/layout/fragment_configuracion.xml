@@ -1,15 +1,55 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondo_fragment">
+    tools:context="View.configuracion.ConfiguracionFragment"
+    android:background="@drawable/fondo_fragment"
+    >
 
-    <TextView
-        android:layout_width="wrap_content"
+    <ScrollView
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/android_icon"
-        android:id="@+id/textView"
-        android:textSize="70sp"
-        android:textColor="@color/material_blue_grey_900"/>
-</LinearLayout>
+        android:id="@+id/scrollView" >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="20dp">
+
+
+
+            <TextView
+                android:text="@string/usuario"
+                android:id="@+id/textView17"
+                style="@style/style_textView"
+                />
+
+            <EditText
+                android:id="@+id/editText4"
+                style="@style/style_editText"/>
+
+            <TextView
+                android:text="@string/contrasena"
+                android:id="@+id/textView18"
+                style="@style/style_textView"/>
+
+            <EditText
+                android:id="@+id/editText5"
+                style="@style/style_editText"/>
+
+            <TextView
+                android:text="@string/pregunta_seguridad"
+                android:id="@+id/textView19"
+                style="@style/style_textView"/>
+
+            <EditText
+                android:id="@+id/editText6"
+                style="@style/style_editText"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</FrameLayout>

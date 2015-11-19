@@ -29,7 +29,7 @@
                 android:visibility="gone">
 
                 <fragment
-                    class="View.usuario.ListDatosFisicosFragment"
+                    class="View.antecedentesEnfermedades.AntecedentesFisiologicosFragment"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent" />
             </LinearLayout>
@@ -47,7 +47,7 @@
                 android:visibility="gone" >
 
                 <fragment
-                    class="View.usuario.ListDatosFisicosFragment"
+                    class="View.antecedentesEnfermedades.AntecedentesGinoobstetricosFragment"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent" />
             </LinearLayout>
@@ -65,7 +65,7 @@
                 android:visibility="gone" >
 
                 <fragment
-                    class="View.usuario.ListDatosFisicosFragment"
+                    class="View.antecedentesEnfermedades.AntecedentesPatologicosFragment"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent" />
             </LinearLayout>
@@ -83,7 +83,7 @@
                 android:visibility="gone" >
 
                 <fragment
-                    class="View.usuario.ListDatosFisicosFragment"
+                    class="View.antecedentesEnfermedades.EmbarazosFragment"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent" />
             </LinearLayout>

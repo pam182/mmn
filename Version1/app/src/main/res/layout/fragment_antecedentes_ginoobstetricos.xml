@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <TextView
+        android:text="@string/menarquia"
+        android:id="@+id/textView4"
+        style="@style/style_textView" />
+
+    <EditText
+        android:id="@+id/fecha_et"
+        style="@style/style_editText"/>
+
+    <TextView
+        android:text="@string/menopausia"
+        android:id="@+id/textView5"
+        style="@style/style_textView"/>
+
+    <EditText
+        android:id="@+id/altura_et"
+        style="@style/style_editText"/>
+
+    <TextView
+        android:text="@string/duracion_menstruacion"
+        android:id="@+id/textView6"
+        style="@style/style_textView"/>
+
+    <EditText
+        android:id="@+id/peso_et"
+        style="@style/style_editText"/>
+
+    <TextView
+        android:text="@string/frecuencia"
+        android:id="@+id/textView7"
+        style="@style/style_textView"/>
+
+    <EditText
+        android:id="@+id/temperatura_et"
+        style="@style/style_editText"/>
+
+    <TextView
+        style="@style/style_textView"
+        android:text="@string/fecha_ultima_menstruacion"
+        android:id="@+id/textView8"/>
+
+    <EditText
+        style="@style/style_editText"
+        android:id="@+id/editText12" />
+
+</LinearLayout>
+
+

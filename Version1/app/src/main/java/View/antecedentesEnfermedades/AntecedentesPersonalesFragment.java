@@ -18,6 +18,10 @@ public class AntecedentesPersonalesFragment extends Fragment implements View.OnC
     Button showAntecedentesGinoobstetricos;
     Button showAntecedentesPatologicos;
     Button showEmbarazos;
+    Boolean primeroCerrado = true;
+    Boolean segundoCerrado = true;
+    Boolean terceroCerrado = true;
+    Boolean cuartoCerrado = true;
 
     public AntecedentesPersonalesFragment() {
         // Required empty public constructor
@@ -45,16 +49,31 @@ public class AntecedentesPersonalesFragment extends Fragment implements View.OnC
         switch (v.getId()) {
 
             case R.id.showAntecedentesFisiologicos:
-                showFragmentOne();
+                if(primeroCerrado){
+                    showFragmentOne();
+                }else
+                cerrarTodo();
                 break;
             case R.id.showAntecedentesGinoobstetricos:
-                showFragmentTwo();
+                if(segundoCerrado){
+                    showFragmentTwo();
+                }else
+                cerrarTodo();
+
                 break;
             case R.id.showAntecedentesPatologicos:
-                showFragmentThree();
+                if(terceroCerrado){
+                    showFragmentThree();
+                }else
+                cerrarTodo();
+
                 break;
             case R.id.showEmbarazos:
-                showFragmentFour();
+                if(cuartoCerrado){
+                    showFragmentFour();
+                }else
+                cerrarTodo();
+
                 break;
             default:
 
@@ -67,23 +86,37 @@ public class AntecedentesPersonalesFragment extends Fragment implements View.OnC
         getActivity().findViewById(R.id.fragment_two).setVisibility(View.GONE);
         getActivity().findViewById(R.id.fragment_three).setVisibility(View.GONE);
         getActivity().findViewById(R.id.fragment_four).setVisibility(View.GONE);
+        this.primeroCerrado = false;
     }
     public void showFragmentTwo(){
         getActivity().findViewById(R.id.fragment_one).setVisibility(View.GONE);
         getActivity().findViewById(R.id.fragment_two).setVisibility(View.VISIBLE);
         getActivity().findViewById(R.id.fragment_three).setVisibility(View.GONE);
         getActivity().findViewById(R.id.fragment_four).setVisibility(View.GONE);
+        this.segundoCerrado = false;
     }
     public void showFragmentThree(){
         getActivity().findViewById(R.id.fragment_one).setVisibility(View.GONE);
         getActivity().findViewById(R.id.fragment_two).setVisibility(View.GONE);
         getActivity().findViewById(R.id.fragment_three).setVisibility(View.VISIBLE);
         getActivity().findViewById(R.id.fragment_four).setVisibility(View.GONE);
+        this.terceroCerrado = false;
     }
     public void showFragmentFour(){
         getActivity().findViewById(R.id.fragment_one).setVisibility(View.GONE);
         getActivity().findViewById(R.id.fragment_two).setVisibility(View.GONE);
         getActivity().findViewById(R.id.fragment_three).setVisibility(View.GONE);
         getActivity().findViewById(R.id.fragment_four).setVisibility(View.VISIBLE);
+        this.cuartoCerrado = false;
+    }
+    public void cerrarTodo(){
+        getActivity().findViewById(R.id.fragment_one).setVisibility(View.GONE);
+        getActivity().findViewById(R.id.fragment_two).setVisibility(View.GONE);
+        getActivity().findViewById(R.id.fragment_three).setVisibility(View.GONE);
+        getActivity().findViewById(R.id.fragment_four).setVisibility(View.GONE);
+        this.primeroCerrado = true;
+        this.segundoCerrado = true;
+        this.terceroCerrado = true;
+        this.cuartoCerrado = true;
     }
 }

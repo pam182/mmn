@@ -14,9 +14,7 @@ package com.pamela.zeballos.version1;
 import android.content.res.Configuration;
 import android.content.res.TypedArray;
 
-import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
-import android.graphics.drawable.Drawable;
 import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.ActionBarActivity;
@@ -37,7 +35,9 @@ import View.antecedentesEnfermedades.AntecedentesEnfermedadesFragment;
 import View.configuracion.ConfiguracionFragment;
 import View.reportes.ReportesFragment;
 import View.usuario.UsuarioFragment;
+import View.visitaMedica.CreateVisitaMedicaFragment;
 import View.visitaMedica.VisitaMedicaFragment;
+import item_list.ItemVisitaMedicaFragment;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -145,18 +145,19 @@ public class MainActivity extends ActionBarActivity {
         });
 
         //Cuando la aplicacion cargue por defecto mostrar la opcion Home
-        ShowFragment(1);
+        ShowFragment(0);
 
     }
 
     private void ShowFragment(int position){
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction ft = fragmentManager.beginTransaction();
-
         switch (position){
             case 0:
                 ft.replace(R.id.container, HomeFragment.newInstance(position))
                         .commit();
+//                ft.replace(R.id.container, ItemVisitaMedicaFragment.newInstance(position))
+//                        .commit();
                 break;
             case 1:
                 ft.replace(R.id.container, UsuarioFragment.newInstance(position))
@@ -164,7 +165,7 @@ public class MainActivity extends ActionBarActivity {
                 break;
             case 2:
                 ft.replace(R.id.container, AntecedentesEnfermedadesFragment.newInstance(position))
-                    .commit();
+                        .commit();
                 break;
             case 3:
                 ft.replace(R.id.container, VisitaMedicaFragment.newInstance(position))
@@ -183,6 +184,37 @@ public class MainActivity extends ActionBarActivity {
                         .commit();
                 break;
         }
+
+//        switch (position){
+//            case 0:
+//                ft.replace(R.id.container, HomeFragment.newInstance(position))
+//                        .commit();
+//                break;
+//            case 1:
+//                ft.replace(R.id.container, UsuarioFragment.newInstance(position))
+//                        .commit();
+//                break;
+//            case 2:
+//                ft.replace(R.id.container, AntecedentesEnfermedadesFragment.newInstance(position))
+//                    .commit();
+//                break;
+//            case 3:
+//                ft.replace(R.id.container, VisitaMedicaFragment.newInstance(position))
+//                        .commit();
+//                break;
+//            case 4:
+//                ft.replace(R.id.container, ReportesFragment.newInstance(position))
+//                        .commit();
+//                break;
+//            case 5:
+//                ft.replace(R.id.container, ConfiguracionFragment.newInstance(position))
+//                        .commit();
+//                break;
+//            default:
+//                ft.replace(R.id.container, TabbedFragmentActivity.newInstance(position))
+//                        .commit();
+//                break;
+//        }
 
         NavDrawerLayout.closeDrawer(Gravity.START); // close the DrawerToggle
     }

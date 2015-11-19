@@ -91,9 +91,43 @@
                 android:id="@+id/editText11"
                 style="@style/style_editText"/>
 
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:weightSum="2" >
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <Button
+                        style="@style/style_button"
+                        android:id="@+id/button3"
+                        android:text="@string/aceptar"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <Button
+                        style="@style/style_button"
+                        android:id="@+id/button4"
+                        android:text="@string/cancelar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
             <TextView
                 android:id="@+id/textView25"
                 style="@style/style_espacio_vertical"/>
+
 
         </LinearLayout>
 

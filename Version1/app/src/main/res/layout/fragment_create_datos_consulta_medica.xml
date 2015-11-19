@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <TextView
+        android:text="@string/centro_medico"
+        android:id="@+id/textView4"
+        style="@style/style_textView" />
+
+    <EditText
+        android:id="@+id/fecha_et"
+        style="@style/style_editText"/>
+
+    <TextView
+        android:text="@string/especialidad"
+        android:id="@+id/textView5"
+        style="@style/style_textView"/>
+
+    <EditText
+        android:id="@+id/altura_et"
+        style="@style/style_editText"/>
+
+    <TextView
+        android:text="@string/nombre_doctor"
+        android:id="@+id/textView6"
+        style="@style/style_textView"/>
+
+    <EditText
+        android:id="@+id/peso_et"
+        style="@style/style_editText"/>
+
+    <TextView
+        style="@style/style_textView"
+        android:text="@string/fecha_consulta"
+        android:id="@+id/textView9" />
+
+    <EditText
+        style="@style/style_editText"
+        android:id="@+id/editText" />
+
+</LinearLayout>
+
+

@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment_one"
+        android:visibility="visible"
+        android:gravity="right">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:padding="10dp">
+
+            <Button
+                style="@style/style_icon_button"
+                android:id="@+id/anadir"
+                android:text="@string/icon_anadir" />
+        </LinearLayout>
+
+        <fragment
+            class="View.visitaMedica.ListaTratamientosRecetadosFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment_two"
+        android:visibility="gone" >
+
+        <fragment
+            class="View.visitaMedica.CreateTratamientosRecetadosFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>
+
+

@@ -3,21 +3,31 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="View.configuracion.ConfiguracionFragment"
-    android:background="@drawable/fondo_fragment"
+    android:background="@drawable/fondo_home"
     >
 
     <ScrollView
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="fill_parent"
         android:id="@+id/scrollView" >
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_margin="20dp">
 
-
-        </LinearLayout>
-
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></RelativeLayout>
     </ScrollView>
+
+    <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/imageView"-->
+        <!--android:layout_gravity="center_horizontal|top"-->
+        <!--android:src="@drawable/logo_header" />-->
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:layout_gravity="center_horizontal|bottom"
+        android:src="@drawable/logo_footer" />
+
 </FrameLayout>

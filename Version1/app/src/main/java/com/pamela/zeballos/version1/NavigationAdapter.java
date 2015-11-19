@@ -47,6 +47,7 @@ public class NavigationAdapter extends BaseAdapter {
         LayoutInflater inflator = activity.getLayoutInflater();
         if(convertView==null)
         {
+
             view = new Fila();
             //Creo objeto item y lo obtengo del array
             Menu_Item itm=arrayitms.get(position);

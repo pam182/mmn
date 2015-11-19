@@ -71,16 +71,7 @@ public class AntecedentesEnfermedadesFragment extends Fragment {
 
         @Override
         public Fragment getItem(int position) {
-            // getItem is called to instantiate the fragment for the given page.
-            // Return a DummySectionFragment (defined as a static inner class
-            // below) with the page number as its lone argument.
-            /*Fragment fragment = new DummySectionFragment();
-            Bundle args = new Bundle();
-            args.putInt(DummySectionFragment.ARG_SECTION_NUMBER, position + 1);
-            fragment.setArguments(args);*/
-            //return fragment;
 
-            //replaced with our fragments one by tab
             switch (position){
                 case 0:
                     return  new AntecedentesPersonalesFragment();
@@ -90,24 +81,6 @@ public class AntecedentesEnfermedadesFragment extends Fragment {
                     return null;
             }
         }
-
-//        public void changeFragment(){
-//
-//            HomeFragment newFragment = new HomeFragment();
-//            Bundle args = new Bundle();
-//            args.putInt(HomeFragment.ARG_SECTION_NUMBER, position);
-//            newFragment.setArguments(args);
-//
-//            FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-//
-//// Replace whatever is in the fragment_container view with this fragment,
-//// and add the transaction to the back stack so the user can navigate back
-//            transaction.replace(R.id.fragment_container, newFragment);
-//            transaction.addToBackStack(null);
-//
-//// Commit the transaction
-//            transaction.commit();
-//        }
 
         @Override
         public int getCount() {

@@ -1,24 +1,48 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/pager"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TabbedActivity" >
+    android:background="@drawable/fondo_fragment">
 
-    <!--
-    This title strip will display the currently visible page title, as well as the page
-    titles for adjacent pages.
-    -->
 
-    <android.support.v4.view.PagerTabStrip
-        android:id="@+id/pager_title_strip"
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/linearLayout"
+                android:visibility="visible" >
+
+                <Button
+                    style="@style/style_button"
+                    android:id="@+id/button"
+                    android:text="@string/nueva_visita_medica"/>
+
+                <fragment
+                    class="View.visitaMedica.ListVisitaMedicaFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/container"
         android:layout_width="match_parent"
-        android:layout_height="40sp"
-        android:layout_gravity="top"
-        android:background="#666633"
-        android:paddingBottom="4dp"
-        android:paddingTop="4dp"
-        android:textColor="#fff" />
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical">
 
-</android.support.v4.view.ViewPager>
+
+    </FrameLayout>
+</FrameLayout>
