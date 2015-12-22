@@ -8,7 +8,7 @@
         style="@style/style_textView" />
 
     <EditText
-        android:id="@+id/fecha_et"
+        android:id="@+id/et_fecha"
         style="@style/style_editText"/>
 
     <TextView
@@ -17,7 +17,7 @@
         style="@style/style_textView"/>
 
     <EditText
-        android:id="@+id/altura_et"
+        android:id="@+id/et_altura"
         style="@style/style_editText"/>
 
     <TextView
@@ -26,7 +26,7 @@
         style="@style/style_textView"/>
 
     <EditText
-        android:id="@+id/peso_et"
+        android:id="@+id/et_peso"
         style="@style/style_editText"/>
 
     <TextView
@@ -35,7 +35,7 @@
         style="@style/style_textView"/>
 
     <EditText
-        android:id="@+id/temperatura_et"
+        android:id="@+id/et_temperatura"
         style="@style/style_editText"/>
 
     <LinearLayout

@@ -25,7 +25,7 @@
                 />
 
             <EditText
-                android:id="@+id/editText4"
+                android:id="@+id/datos_nombre"
                 style="@style/style_editText"/>
 
             <TextView
@@ -34,7 +34,7 @@
                 style="@style/style_textView"/>
 
             <EditText
-                android:id="@+id/editText5"
+                android:id="@+id/datos_edad"
                 style="@style/style_editText"/>
 
             <TextView
@@ -43,7 +43,7 @@
                 style="@style/style_textView"/>
 
             <EditText
-                android:id="@+id/editText6"
+                android:id="@+id/datos_estado_civil"
                 style="@style/style_editText"/>
 
             <TextView
@@ -52,7 +52,7 @@
                 style="@style/style_textView"/>
 
             <EditText
-                android:id="@+id/editText7"
+                android:id="@+id/datos_nacionalidad"
                 style="@style/style_editText"/>
 
             <TextView
@@ -61,7 +61,7 @@
                 style="@style/style_textView"/>
 
             <EditText
-                android:id="@+id/editText8"
+                android:id="@+id/datos_ocupacion"
                 style="@style/style_editText"/>
 
             <TextView
@@ -70,7 +70,7 @@
                 style="@style/style_textView"/>
 
             <EditText
-                android:id="@+id/editText9"
+                android:id="@+id/datos_domicilio"
                 style="@style/style_editText"/>
 
             <TextView
@@ -79,7 +79,7 @@
                 style="@style/style_textView"/>
 
             <EditText
-                android:id="@+id/editText10"
+                android:id="@+id/datos_responsable"
                 style="@style/style_editText"/>
 
             <TextView
@@ -88,7 +88,7 @@
                 style="@style/style_textView"/>
 
             <EditText
-                android:id="@+id/editText11"
+                android:id="@+id/datos_sexo"
                 style="@style/style_editText"/>
 
 

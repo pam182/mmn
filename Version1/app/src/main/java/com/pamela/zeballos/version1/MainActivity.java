@@ -180,41 +180,11 @@ public class MainActivity extends ActionBarActivity {
                         .commit();
                 break;
             default:
-                ft.replace(R.id.container, TabbedFragmentActivity.newInstance(position))
+                ft.replace(R.id.container, HomeFragment.newInstance(position))
                         .commit();
                 break;
         }
 
-//        switch (position){
-//            case 0:
-//                ft.replace(R.id.container, HomeFragment.newInstance(position))
-//                        .commit();
-//                break;
-//            case 1:
-//                ft.replace(R.id.container, UsuarioFragment.newInstance(position))
-//                        .commit();
-//                break;
-//            case 2:
-//                ft.replace(R.id.container, AntecedentesEnfermedadesFragment.newInstance(position))
-//                    .commit();
-//                break;
-//            case 3:
-//                ft.replace(R.id.container, VisitaMedicaFragment.newInstance(position))
-//                        .commit();
-//                break;
-//            case 4:
-//                ft.replace(R.id.container, ReportesFragment.newInstance(position))
-//                        .commit();
-//                break;
-//            case 5:
-//                ft.replace(R.id.container, ConfiguracionFragment.newInstance(position))
-//                        .commit();
-//                break;
-//            default:
-//                ft.replace(R.id.container, TabbedFragmentActivity.newInstance(position))
-//                        .commit();
-//                break;
-//        }
 
         NavDrawerLayout.closeDrawer(Gravity.START); // close the DrawerToggle
     }
@@ -264,9 +234,6 @@ public class MainActivity extends ActionBarActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement

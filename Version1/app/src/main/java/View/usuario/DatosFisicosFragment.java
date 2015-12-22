@@ -12,10 +12,14 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 
 import com.pamela.zeballos.version1.R;
 
 import Util.FragmentCustomAdapter;
+import butterknife.Bind;
+import model.DatosFisicosModel;
+import model.DatosPersonalesModel;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -26,6 +30,17 @@ public class DatosFisicosFragment extends Fragment implements OnClickListener {
     Button cancelarButton;
     FragmentCustomAdapter mSectionsPagerAdapter;
     ViewPager mViewPager;
+    @Bind(R.id.et_fecha)
+    EditText et_fecha;
+
+    @Bind(R.id.et_altura)
+    EditText et_altura;
+
+    @Bind(R.id.et_peso)
+    EditText et_peso;
+
+    @Bind(R.id.et_temperatura)
+    EditText et_temperatura;
 
     public DatosFisicosFragment() {
         // Required empty public constructor
@@ -66,6 +81,7 @@ public class DatosFisicosFragment extends Fragment implements OnClickListener {
                 showFragmentTwo();
                 break;
             case R.id.aceptarButton:
+                guardarDatosFisicos();
                 showFragmentOne();
                 break;
             case R.id.cancelarButton:
@@ -79,6 +95,14 @@ public class DatosFisicosFragment extends Fragment implements OnClickListener {
         }
     }
 
+    public void guardarDatosFisicos(){
+        final DatosFisicosModel model = new DatosFisicosModel();
+        model.setAltura(et_altura.getText().toString());
+        model.setFecha(et_fecha.getText().toString());
+        model.setPeso(et_peso.getText().toString());
+        model.setTemperatura(et_temperatura.getText().toString());
+
+    }
     public void showFragmentOne(){
         getActivity().findViewById(R.id.fragment_two).setVisibility(View.GONE);
         getActivity().findViewById(R.id.fragment_one).setVisibility(View.VISIBLE);
