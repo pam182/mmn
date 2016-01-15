@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondo_fragment"
-    tools:context="View.configuracion.ConfiguracionFragment">
+    tools:context="views.configuracion.ConfiguracionFragment">
 
     <ScrollView
         android:id="@+id/scrollView"
@@ -29,7 +29,7 @@
                     style="@style/style_button"/>
 
                 <fragment
-                    class="View.usuario.ListDatosFisicosFragment"
+                    class="views.usuario.ListDatosFisicosFragment"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent" />
             </LinearLayout>
@@ -42,7 +42,7 @@
                 android:visibility="gone">
 
                 <fragment
-                    class="View.usuario.CreateDatosFisicosFragment"
+                    class="views.usuario.CreateDatosFisicosFragment"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent" />
             </LinearLayout>

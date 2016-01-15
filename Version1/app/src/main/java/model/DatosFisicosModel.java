@@ -1,11 +1,10 @@
 package model;
 
-import com.parse.ParseClassName;
 
 /**
  * Created by Zeballos on 12/19/15.
  */
-@ParseClassName("DatosFisicosModel")
+
 public class DatosFisicosModel {
     private String fecha;
 

@@ -31,13 +31,11 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import java.util.ArrayList;
 
-import View.antecedentesEnfermedades.AntecedentesEnfermedadesFragment;
-import View.configuracion.ConfiguracionFragment;
-import View.reportes.ReportesFragment;
-import View.usuario.UsuarioFragment;
-import View.visitaMedica.CreateVisitaMedicaFragment;
-import View.visitaMedica.VisitaMedicaFragment;
-import item_list.ItemVisitaMedicaFragment;
+import views.antecedentesEnfermedades.AntecedentesEnfermedadesFragment;
+import views.configuracion.ConfiguracionFragment;
+import views.reportes.ReportesFragment;
+import views.usuario.UsuarioFragment;
+import views.visitaMedica.VisitaMedicaFragment;
 
 
 public class MainActivity extends ActionBarActivity {

@@ -1,138 +1,151 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="View.configuracion.ConfiguracionFragment"
     android:background="@drawable/fondo_fragment"
-    >
+    android:orientation="vertical">
 
-    <ScrollView
+
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/scrollView" >
+        android:weightSum="2"
+        android:layout_margin="10dp">
+
         <LinearLayout
             android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <Button
+                style="@style/style_icon_button"
+                android:id="@+id/btn_accept"
+                android:text="@string/icon_aceptar" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <Button
+                style="@style/style_icon_button"
+                android:id="@+id/btn_cancel"
+                android:text="@string/icon_cancelar" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:layout_margin="20dp">
-
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
 
 
             <TextView
-                android:text="@string/nombre"
                 android:id="@+id/textView17"
                 style="@style/style_textView"
+                android:text="@string/nombre" />
+
+            <EditText
+                android:id="@+id/et_nombre"
+                style="@style/style_editText"
+                android:maxLength="@integer/max_cant_edittext"
+                android:capitalize="words"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
                 />
 
-            <EditText
-                android:id="@+id/datos_nombre"
-                style="@style/style_editText"/>
-
             <TextView
-                android:text="@string/edad"
                 android:id="@+id/textView18"
-                style="@style/style_textView"/>
+                style="@style/style_textView"
+                android:text="@string/edad" />
 
             <EditText
-                android:id="@+id/datos_edad"
-                style="@style/style_editText"/>
+                android:id="@+id/et_edad"
+                style="@style/style_editText"
+                android:numeric="integer"
+                android:inputType="number"
+                 />
 
             <TextView
-                android:text="@string/estado_civil"
                 android:id="@+id/textView19"
-                style="@style/style_textView"/>
+                style="@style/style_textView"
+                android:text="@string/estado_civil" />
 
             <EditText
-                android:id="@+id/datos_estado_civil"
-                style="@style/style_editText"/>
+                android:id="@+id/et_estado_civil"
+                style="@style/style_editText"
+                android:editable="false"/>
 
             <TextView
-                android:text="@string/nacionalidad"
                 android:id="@+id/textView20"
-                style="@style/style_textView"/>
+                style="@style/style_textView"
+                android:text="@string/nacionalidad" />
 
             <EditText
-                android:id="@+id/datos_nacionalidad"
-                style="@style/style_editText"/>
+                android:id="@+id/et_nacionalidad"
+                style="@style/style_editText" />
 
             <TextView
-                android:text="@string/ocupacion"
                 android:id="@+id/textView21"
-                style="@style/style_textView"/>
+                style="@style/style_textView"
+                android:text="@string/ocupacion" />
 
             <EditText
-                android:id="@+id/datos_ocupacion"
-                style="@style/style_editText"/>
+                android:id="@+id/et_ocupacion"
+                style="@style/style_editText" />
 
             <TextView
-                android:text="@string/domicilio"
                 android:id="@+id/textView22"
-                style="@style/style_textView"/>
+                style="@style/style_textView"
+                android:text="@string/domicilio" />
 
             <EditText
-                android:id="@+id/datos_domicilio"
-                style="@style/style_editText"/>
+                android:id="@+id/et_domicilio"
+                style="@style/style_editText" />
 
             <TextView
-                android:text="@string/responsable"
                 android:id="@+id/textView23"
-                style="@style/style_textView"/>
+                style="@style/style_textView"
+                android:text="@string/responsable" />
 
             <EditText
-                android:id="@+id/datos_responsable"
-                style="@style/style_editText"/>
+                android:id="@+id/et_datos_responsable"
+                style="@style/style_editText" />
 
             <TextView
-                android:text="@string/sexo"
                 android:id="@+id/textView24"
-                style="@style/style_textView"/>
+                style="@style/style_textView"
+                android:text="@string/sexo" />
 
             <EditText
-                android:id="@+id/datos_sexo"
-                style="@style/style_editText"/>
+                android:id="@+id/et_genero"
+                style="@style/style_editText" />
 
 
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="fill_parent"
-                android:layout_height="match_parent"
-                android:weightSum="2" >
-
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1" >
-
-                    <Button
-                        style="@style/style_button"
-                        android:id="@+id/button3"
-                        android:text="@string/aceptar"/>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1" >
-
-                    <Button
-                        style="@style/style_button"
-                        android:id="@+id/button4"
-                        android:text="@string/cancelar"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
-                </LinearLayout>
-            </LinearLayout>
             <TextView
                 android:id="@+id/textView25"
-                style="@style/style_espacio_vertical"/>
+                style="@style/style_espacio_vertical" />
 
 
         </LinearLayout>
 
     </ScrollView>
 
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText7" />
 
-
-</FrameLayout>
+</LinearLayout>

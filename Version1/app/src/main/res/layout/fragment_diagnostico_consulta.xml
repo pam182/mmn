@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="View.configuracion.ConfiguracionFragment"
+    tools:context="views.configuracion.ConfiguracionFragment"
     android:background="@drawable/fondo_fragment">
 
     <!-- TODO: Update blank fragment layout -->
@@ -77,7 +77,7 @@
                 android:visibility="gone" >
 
                 <fragment
-                    class="View.visitaMedica.CreateDiagnosticoFragment"
+                    class="views.visitaMedica.CreateDiagnosticoFragment"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     />

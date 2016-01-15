@@ -1,7 +1,6 @@
 package model;
 
-import com.parse.ParseClassName;
-import com.parse.ParseObject;
+
 
 /**
  * Created by Zeballos on 12/12/15.
@@ -9,8 +8,8 @@ import com.parse.ParseObject;
 
 
 
-@ParseClassName("DatosPersonalesModel")
-public class DatosPersonalesModel extends ParseObject {
+
+public class DatosPersonalesModel {
     private String datosNombre;
     private String datosEdad;
     private String datosEstadoCivil;
@@ -26,9 +25,6 @@ public class DatosPersonalesModel extends ParseObject {
 //        return datosNombre;
 //    }
 
-    public void setDatosNombre(String datosNombre) {
-        put("datosNombre", datosNombre);
-    }
 
     public String getDatosEdad() {
         return datosEdad;

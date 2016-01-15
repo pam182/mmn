@@ -26,7 +26,7 @@
         </LinearLayout>
 
         <fragment
-            class="View.visitaMedica.ListMisSintomasFragment"
+            class="views.visitaMedica.ListMisSintomasFragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
@@ -40,7 +40,7 @@
         android:visibility="gone" >
 
         <fragment
-            class="View.visitaMedica.CreateSintomasFragment"
+            class="views.visitaMedica.CreateSintomasFragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
     </LinearLayout>

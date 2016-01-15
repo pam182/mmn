@@ -5,6 +5,15 @@
         <!-- Customize your theme here. -->
     </style>
 
+
+    <style name="style_toast_messages">
+
+        <item name="android:background">@drawable/shape_toast_messages</item>
+        <item name="android:alpha">0.9</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:padding">20dp</item>
+    </style>
+
     <style name="style_textView">
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">30dp</item>
@@ -41,7 +50,13 @@
         <item name="android:textColor">#D6D6C2</item>
         <item name="android:background">@drawable/button_background</item>
     </style>
-
+    <style name="style_button_actions">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#D6D6C2</item>
+        <item name="android:background">@drawable/button_background_actions</item>
+    </style>
     <style name="style_item_list">
         <item name="android:background">@drawable/shape_green_roundcorner</item>
         <item name="android:alpha">0.7</item>
