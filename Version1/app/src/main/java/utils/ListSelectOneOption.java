@@ -9,14 +9,19 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
-import android.widget.EditText;
+import android.widget.ListView;
 
 import com.pamela.zeballos.version1.R;
+
+import butterknife.Bind;
 
 /**
  * Created by Pamela on 1/14/16.
  */
 public class ListSelectOneOption extends DialogFragment {
+    @Bind(R.id.listview_select_one_option)
+    ListView listView;
+
     public ListSelectOneOption(){
 
     }

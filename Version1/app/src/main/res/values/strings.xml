@@ -167,6 +167,7 @@
     <string name="sign_up_text">Sign Up!</string>
     <string name="title_activity_sign_up">Sign Up</string>
     <string name="logout_label">Logout</string>
+    <string name="seleccione_opcion">Por favor, Seleccione una opcion.</string>
 
     <!--fin mensajes-->
 </resources>
