@@ -2,14 +2,50 @@
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_margin="10dp" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <Button
+                style="@style/style_icon_button"
+                android:id="@+id/btn_accept"
+                android:text="@string/icon_aceptar" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <Button
+                style="@style/style_icon_button"
+                android:id="@+id/btn_cancel"
+                android:text="@string/icon_cancelar" />
+        </LinearLayout>
+    </LinearLayout>
+
     <TextView
         android:text="@string/parto"
         android:id="@+id/textView4"
         style="@style/style_textView" />
 
     <EditText
-        android:id="@+id/fecha_et"
-        style="@style/style_editText"/>
+        android:id="@+id/et_parto"
+        style="@style/style_editText"
+        android:focusable="false"/>
 
     <TextView
         android:text="@string/tipo_parto"
@@ -17,8 +53,9 @@
         style="@style/style_textView"/>
 
     <EditText
-        android:id="@+id/altura_et"
-        style="@style/style_editText"/>
+        android:id="@+id/et_tipo_parto"
+        style="@style/style_editText"
+        android:focusable="false"/>
 
     <TextView
         android:text="@string/peso_nacer"
@@ -26,8 +63,9 @@
         style="@style/style_textView"/>
 
     <EditText
-        android:id="@+id/peso_et"
-        style="@style/style_editText"/>
+        android:id="@+id/et_peso_nacer"
+        style="@style/style_editText"
+        android:inputType="numberDecimal"/>
 
 </LinearLayout>
 

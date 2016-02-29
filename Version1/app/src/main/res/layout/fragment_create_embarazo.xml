@@ -2,32 +2,6 @@
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
-    <TextView
-        android:text="@string/fecha"
-        android:id="@+id/textView4"
-        style="@style/style_textView" />
-
-    <EditText
-        android:id="@+id/fecha_et"
-        style="@style/style_editText"/>
-
-    <TextView
-        android:text="@string/tipo_parto"
-        android:id="@+id/textView5"
-        style="@style/style_textView"/>
-
-    <EditText
-        android:id="@+id/altura_et"
-        style="@style/style_editText"/>
-
-    <TextView
-        android:text="@string/tiempo_embarazo"
-        android:id="@+id/textView6"
-        style="@style/style_textView"/>
-
-    <EditText
-        android:id="@+id/peso_et"
-        style="@style/style_editText"/>
 
     <LinearLayout
         android:orientation="horizontal"
@@ -44,8 +18,9 @@
 
             <Button
                 style="@style/style_icon_button"
-                android:id="@+id/aceptarCreatePatologicoButton"
+                android:id="@+id/btn_accept"
                 android:text="@string/icon_aceptar" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -57,12 +32,53 @@
 
             <Button
                 style="@style/style_icon_button"
-                android:id="@+id/cancelarCreatePatologigoButton"
+                android:id="@+id/btn_cancel"
                 android:text="@string/icon_cancelar"
                 />
         </LinearLayout>
 
     </LinearLayout>
+
+    <TextView
+        android:text="@string/fecha"
+        android:id="@+id/textView4"
+        style="@style/style_textView" />
+
+    <EditText
+        android:id="@+id/et_fecha"
+        style="@style/style_editText"
+        android:focusable="false"/>
+
+    <TextView
+        style="@style/style_textView"
+        android:text="@string/parto"
+        android:id="@+id/textView2"/>
+
+    <EditText
+        style="@style/style_editText"
+        android:id="@+id/et_parto_embarazo"
+        android:focusable="false"/>
+
+    <TextView
+        android:text="@string/tipo_parto"
+        android:id="@+id/textView5"
+        style="@style/style_textView"/>
+
+    <EditText
+        android:id="@+id/et_tipo_parto_embarazo"
+        style="@style/style_editText"
+        android:focusable="false"/>
+
+    <TextView
+        android:text="@string/tiempo_embarazo"
+        android:id="@+id/textView6"
+        style="@style/style_textView"/>
+
+    <EditText
+        android:id="@+id/et_tiempo_embarazo"
+        style="@style/style_editText"
+        android:focusable="false"/>
+
 </LinearLayout>
 
 

@@ -2,50 +2,80 @@
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
-    <TextView
-        android:text="@string/menarquia"
-        android:id="@+id/textView4"
-        style="@style/style_textView" />
 
-    <EditText
-        android:id="@+id/fecha_et"
-        style="@style/style_editText"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_margin="10dp" >
 
-    <TextView
-        android:text="@string/menopausia"
-        android:id="@+id/textView5"
-        style="@style/style_textView"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
 
-    <EditText
-        android:id="@+id/altura_et"
-        style="@style/style_editText"/>
+            <Button
+                style="@style/style_icon_button"
+                android:id="@+id/btn_accept"
+                android:text="@string/icon_aceptar" />
+        </LinearLayout>
 
-    <TextView
-        android:text="@string/duracion_menstruacion"
-        android:id="@+id/textView6"
-        style="@style/style_textView"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
 
-    <EditText
-        android:id="@+id/peso_et"
-        style="@style/style_editText"/>
+            <Button
+                style="@style/style_icon_button"
+                android:id="@+id/btn_cancel"
+                android:text="@string/icon_cancelar" />
+        </LinearLayout>
+    </LinearLayout>
 
-    <TextView
-        android:text="@string/frecuencia"
-        android:id="@+id/textView7"
-        style="@style/style_textView"/>
+            <TextView
+                android:text="@string/menarquia"
+                android:id="@+id/textView4"
+                style="@style/style_textView" />
 
-    <EditText
-        android:id="@+id/temperatura_et"
-        style="@style/style_editText"/>
+            <EditText
+                android:id="@+id/et_menarquia"
+                style="@style/style_editText"
+                android:focusable="false"/>
 
-    <TextView
-        style="@style/style_textView"
-        android:text="@string/fecha_ultima_menstruacion"
-        android:id="@+id/textView8"/>
+            <TextView
+                android:text="@string/menopausia"
+                android:id="@+id/textView5"
+                style="@style/style_textView"/>
 
-    <EditText
-        style="@style/style_editText"
-        android:id="@+id/editText12" />
+            <EditText
+                android:id="@+id/et_menopausia"
+                style="@style/style_editText"
+                android:focusable="false"/>
+
+            <TextView
+                android:text="@string/frecuencia"
+                android:id="@+id/textView7"
+                style="@style/style_textView"/>
+
+            <EditText
+                android:id="@+id/et_frecuencia"
+                style="@style/style_editText"
+                android:focusable="false"/>
+
+            <TextView
+                style="@style/style_textView"
+                android:text="@string/fecha_ultima_menstruacion"
+                android:id="@+id/textView8"/>
+
+            <EditText
+                style="@style/style_editText"
+                android:id="@+id/et_fecha_menstruacion"
+                android:focusable="false"/>
 
 </LinearLayout>
 

@@ -15,7 +15,45 @@
     <string name="icon_anadir">&#xf067;</string>
     <string name="icon_aceptar">&#xf00c;</string>
     <string name="icon_cancelar">&#xf00d;</string>
+    <string name="icon_galery">&#xf1c5;</string>
+    <!-- Lista  parto de embarazada-->
+    <array name="parentesco">
+        <item>Papá</item>
+        <item>Mamá</item>
+        <item>Hermano</item>
+        <item>Hermana</item>
+        <item>Cónyugue</item>
+    </array>
+    <!-- Lista  parto de embarazada-->
+    <array name="parto_embarazo">
+        <item>Término normal</item>
+        <item>Prematuro</item>
+        <item>Aborto espontáneo</item>
+        <item>Aborto provocado</item>
+    </array>
+    <!-- Lista de tipo de partos-->
+    <array name="tipo_parto">
+        <item>Normal</item>
+        <item>Cesárea</item>
+        <item>Circular de cordón</item>
+    </array>
+    <!-- Lista de partos-->
+    <array name="parto">
+        <item>Normal</item>
+        <item>Prematuro</item>
+    </array>
+    <!-- Lista de sexo-->
+    <array name="genero">
+        <item>Masculino</item>
+        <item>Femenino</item>
+    </array>
 
+    <!-- Lista de estado civil-->
+    <array name="estado_civil">
+        <item>Soltero(a)</item>
+        <item>Casado(a)</item>
+        <item>Viudo(a)</item>
+    </array>
 
     <!-- Lista de iconos de navegacion-->
     <array name="navigation_iconos">
@@ -45,7 +83,6 @@
         <item>Visita Medica</item>
         <item>Reportes</item>
         <item>Configuración</item>
-
     </string-array>
     <!--  -->
 
@@ -98,12 +135,12 @@
     <string name="responsable">Responsable : </string>
     <string name="sexo">Sexo : </string>
     <string name="fecha">Fecha : </string>
-    <string name="altura">Altura : </string>
-    <string name="peso">Peso : </string>
-    <string name="temperatura">Temperatura : </string>
+    <string name="altura">Altura en (cm) : </string>
+    <string name="peso">Peso en (kg): </string>
+    <string name="temperatura">Temperatura en (ºC) : </string>
     <string name="parto">Parto : </string>
     <string name="tipo_parto">Tipo de Parto : </string>
-    <string name="peso_nacer">Peso al nacer</string>
+    <string name="peso_nacer">Peso al nacer en (kg):</string>
     <string name="sintomas">Síntomas : </string>
     <string name="titulo_examen">Título :</string>
     <string name="anadir">Añadir</string>
@@ -113,13 +150,13 @@
     <string name="antecedentes_ginoobstetricos">Antecedentes Ginoobstétricos</string>
     <string name="antecedentes_patologicos">Antecedentes Patológicos</string>
     <string name="embarazos">Embarazos</string>
-    <string name="menarquia">Menarquia : </string>
-    <string name="menopausia">Menopausia : </string>
-    <string name="duracion_menstruacion">Duración de la Menstruación : </string>
-    <string name="frecuencia">Frecuencia : </string>
+    <string name="menarquia">Menarquia (años): </string>
+    <string name="menopausia">Menopausia (años): </string>
+    <string name="duracion_menstruacion">Duración de la Menstruación (días): </string>
+    <string name="frecuencia">Frecuencia (días): </string>
     <string name="fecha_ultima_menstruacion">Fecha de la última Menstruación : </string>
     <string name="enfermedad">Enfermedad : </string>
-    <string name="tiempo_embarazo">Tiempo de Embarazo : </string>
+    <string name="tiempo_embarazo">Tiempo de Embarazo (semanas): </string>
     <string name="parentesco">Parentesco : </string>
     <string name="nueva_visita_medica">Iniciar una consulta medica</string>
     <string name="consulta_medica">Consulta Medica</string>
@@ -167,7 +204,381 @@
     <string name="sign_up_text">Sign Up!</string>
     <string name="title_activity_sign_up">Sign Up</string>
     <string name="logout_label">Logout</string>
-    <string name="seleccione_opcion">Por favor, Seleccione una opcion.</string>
+    <string name="seleccione_opcion">Por favor, Seleccione una opción.</string>
+    <string name="adjuntar_imagen">Adjuntar imagen:</string>
 
     <!--fin mensajes-->
+    <!-- Lista de enfermedades-->
+    <array name="lista_enfermedades">
+        <item>Otro:</item>
+        <item>Hipertensión</item>
+        <item>Afecciones tiroideas</item>
+        <item>Alteraciones del ciclo</item>
+        <item>Alteraciones motoras</item>
+        <item>Amenarrea</item>
+        <item>Anemia</item>
+        <item>Anorexia</item>
+        <item>Arritmias</item>
+        <item>Cefalea</item>
+        <item>Chagas</item>
+        <item>Claudicación</item>
+        <item>Cólico</item>
+        <item>Cólico renal</item>
+        <item>Constipación</item>
+        <item>Convulsiones</item>
+        <item>Corticoterapia</item>
+        <item>Depresión</item>
+        <item>Diabetes</item>
+        <item>Diarrea</item>
+        <item>Disnea</item>
+        <item>Dolor epigástrico</item>
+        <item>Dolor lumbar</item>
+        <item>Dolor precordial</item>
+        <item>Edema</item>
+        <item>Enfermedades venéreas</item>
+        <item>Enterorragia</item>
+        <item>Fiebre reumática</item>
+        <item>Ginecocragia</item>
+        <item>Gota</item>
+        <item>Hemturia</item>
+        <item>Hepatitis</item>
+        <item>Hipertensión arterial</item>
+        <item>Hiperuricemia</item>
+        <item>Hormonoterapia</item>
+        <item>Ictericia</item>
+        <item>Infarto de miocardio</item>
+        <item>Infección urinaria</item>
+        <item>Intermitente</item>
+        <item>Mareo</item>
+        <item>Melena</item>
+        <item>Meningitis</item>
+        <item>Menopausia</item>
+        <item>Mononucleosis</item>
+        <item>Náuseas</item>
+        <item>Obesidad</item>
+        <item>Palpitaciones</item>
+        <item>Problemas de coagulación</item>
+        <item>SIDA</item>
+        <item>Siruria</item>
+        <item>Soplos</item>
+        <item>Úlcera gastroduodenal</item>
+        <item>Vértigo</item>
+        <item>Vómitos</item>
+    </array>
+
+    <!-- Lista de especialidades-->
+    <array name="especialidad">
+        <item>Otro:</item>
+        <item>Alergología</item>
+        <item>Anestesiología y reanimación</item>
+        <item>Angiología y cirugía vascular</item>
+        <item>Cardiología</item>
+        <item>Cirugía cardiovascular</item>
+        <item>Cirugía general y del aparato digestivo</item>
+        <item>Cirugía oral y maxilofacial</item>
+        <item>Cirugía ortopédica y traumatología</item>
+        <item>Cirugía pediátrica</item>
+        <item>Cirugía plástica, estética y reparadora</item>
+        <item>Cirugía torácica</item>
+        <item>Dermatología médico-quirúrgica y venereología</item>
+        <item>Endocrinología</item>
+        <item>Estomatología</item>
+        <item>Gastroenterología</item>
+        <item>Geriatría</item>
+        <item>Ginecología y obstetricia o tocología</item>
+        <item>Hematología y hemoterapia</item>
+        <item>Hidrología médica</item>
+        <item>Infectología</item>
+        <item>Medicina aeroespacial</item>
+        <item>Medicina de urgencias</item>
+        <item>Medicina del deporte</item>
+        <item>Medicina del trabajo</item>
+        <item>Medicina familiar y comunitaria</item>
+        <item>Medicina física y rehabilitación</item>
+        <item>Medicina intensiva</item>
+        <item>Medicina interna</item>
+        <item>Medicina legal y forense</item>
+        <item>Medicina preventiva y salud pública</item>
+        <item>Nefrología</item>
+        <item>Neumología</item>
+        <item>Neurocirugía</item>
+        <item>Neurología</item>
+        <item>Nutriología</item>
+        <item>Oftalmología</item>
+        <item>Oncología médica</item>
+        <item>Otorrinolaringología</item>
+        <item>Pediatría</item>
+        <item>Proctología</item>
+        <item>Psiquiatría</item>
+        <item>Rehabilitación</item>
+        <item>Reumatología</item>
+        <item>Toxicología</item>
+        <item>Traumatología</item>
+        <item>Urología</item>
+    </array>
+    <!-- Lista de síntomas-->
+    <array name="sintomas">
+        <item>Otro:</item>
+        <item>Angustia</item>
+        <item>Apetito</item>
+        <item>Baja de pesos</item>
+        <item>Cambios en el peso</item>
+        <item>Cefalea</item>
+        <item>Constipación</item>
+        <item>Diarrea</item>
+        <item>Disfagia</item>
+        <item>Disnea</item>
+        <item>Disnea paroxistica</item>
+        <item>Disuria dolorosa</item>
+        <item>Dolor en fosas lumbares</item>
+        <item>Dolor precordial</item>
+        <item>Edema de extremidades inferiores</item>
+        <item>Expectoración</item>
+        <item>Fiebre</item>
+        <item>Hematuria</item>
+        <item>Hemoptisis</item>
+        <item>Insomnio</item>
+        <item>Intolerancia al calor</item>
+        <item>Intolerancia al frío</item>
+        <item>Malestar general</item>
+        <item>Mareos</item>
+        <item>Náusea</item>
+        <item>Obstrucción bronquial</item>
+        <item>Ortopnea</item>
+        <item>Pirosis</item>
+        <item>Poli defecación</item>
+        <item>Poliaquiuria</item>
+        <item>Problemas de coordinación</item>
+        <item>Puntadas de costado</item>
+        <item>Ronquera</item>
+        <item>Sequedad de la piel</item>
+        <item>Somnolencia</item>
+        <item>Sudoraicón nocturna</item>
+        <item>Temblor fino</item>
+        <item>Tos</item>
+        <item>Vómitos</item>
+    </array>
+    <!-- Lista de altura-->
+    <array name="altura">
+        <item></item>
+        <item>Menor a 150 cm</item>
+        <item>152 cm</item>
+        <item>154 cm</item>
+        <item>156 cm</item>
+        <item>158 cm</item>
+        <item>160 cm</item>
+        <item>162 cm</item>
+        <item>164 cm</item>
+        <item>166 cm</item>
+        <item>168 cm</item>
+        <item>170 cm</item>
+        <item>172 cm</item>
+        <item>174 cm</item>
+        <item>176 cm</item>
+        <item>178 cm</item>
+        <item>180 cm</item>
+        <item>182 cm</item>
+        <item>184 cm</item>
+        <item>186 cm</item>
+        <item>188 cm</item>
+        <item>190 cm</item>
+        <item>192 cm</item>
+        <item>194 cm</item>
+        <item>196 cm</item>
+        <item>198 cm</item>
+        <item>200 cm</item>
+        <item>Mayor a 200 cm</item>
+    </array>
+    <!-- Lista menarquia-->
+    <array name="menarquia">
+        <item>Edad de la primera menstuación</item>
+        <item>8 años</item>
+        <item>9 años</item>
+        <item>10 años</item>
+        <item>11 años</item>
+        <item>12 años</item>
+        <item>13 años</item>
+        <item>14 años</item>
+        <item>15 años</item>
+        <item>16 años</item>
+        <item>17 años</item>
+        <item>18 años</item>
+        <item>19 años</item>
+        <item>20 años</item>
+        <item>21 años</item>
+    </array>
+    <!-- Lista menopausia-->
+    <array name="menopausia">
+        <item>Edad de la última menstuación</item>
+        <item>10 años</item>
+        <item>11 años</item>
+        <item>12 años</item>
+        <item>13 años</item>
+        <item>14 años</item>
+        <item>15 años</item>
+        <item>16 años</item>
+        <item>17 años</item>
+        <item>18 años</item>
+        <item>19 años</item>
+        <item>20 años</item>
+        <item>21 años</item>
+        <item>22 años</item>
+        <item>23 años</item>
+        <item>24 años</item>
+        <item>25 años</item>
+        <item>26 años</item>
+        <item>27 años</item>
+        <item>28 años</item>
+        <item>29 años</item>
+        <item>30 años</item>
+        <item>31 años</item>
+        <item>32 años</item>
+        <item>33 años</item>
+        <item>34 años</item>
+        <item>35 años</item>
+        <item>36 años</item>
+        <item>37 años</item>
+        <item>38 años</item>
+        <item>39 años</item>
+        <item>40 años</item>
+        <item>41 años</item>
+        <item>42 años</item>
+        <item>43 años</item>
+        <item>44 años</item>
+        <item>45 años</item>
+        <item>46 años</item>
+        <item>47 años</item>
+        <item>48 años</item>
+        <item>49 años</item>
+        <item>50 años</item>
+        <item>51 años</item>
+        <item>52 años</item>
+        <item>53 años</item>
+        <item>54 años</item>
+        <item>55 años</item>
+        <item>56 años</item>
+        <item>57 años</item>
+        <item>58 años</item>
+        <item>59 años</item>
+        <item>60 años</item>
+    </array>
+    <!-- Lista ciclo menstrual-->
+    <array name="duracion_menstruacion">
+        <item>Duración del ciclo</item>
+        <item>15 días</item>
+        <item>16 días</item>
+        <item>17 días</item>
+        <item>18 días</item>
+        <item>19 días</item>
+        <item>20 días</item>
+        <item>21 días</item>
+        <item>22 días</item>
+        <item>23 días</item>
+        <item>24 días</item>
+        <item>25 días</item>
+        <item>26 días</item>
+        <item>27 días</item>
+        <item>28 días</item>
+        <item>29 días</item>
+        <item>30 días</item>
+        <item>31 días</item>
+        <item>32 días</item>
+        <item>33 días</item>
+        <item>34 días</item>
+        <item>35 días</item>
+        <item>36 días</item>
+        <item>37 días</item>
+        <item>38 días</item>
+        <item>39 días</item>
+        <item>40 días</item>
+        <item>41 días</item>
+        <item>42 días</item>
+        <item>43 días</item>
+        <item>44 días</item>
+        <item>45 días</item>
+        <item>46 días</item>
+        <item>47 días</item>
+        <item>48 días</item>
+        <item>49 días</item>
+        <item>50 días</item>
+        <item>51 días</item>
+        <item>52 días</item>
+        <item>53 días</item>
+        <item>54 días</item>
+        <item>55 días</item>
+        <item>56 días</item>
+        <item>57 días</item>
+        <item>58 días</item>
+        <item>59 días</item>
+        <item>60 días</item>
+        <item>65 días</item>
+        <item>70 días</item>
+        <item>75 días</item>
+        <item>80 días</item>
+        <item>85 días</item>
+        <item>90 días</item>
+        <item>95 días</item>
+        <item>100 días</item>
+        <item>105 días</item>
+        <item>110 días</item>
+    </array>
+    <!-- Lista tiempo embarzo en semanas-->
+    <array name="tiempo_embarazo">
+        <item></item>
+        <item>1 semana</item>
+        <item>2 semanas</item>
+        <item>3 semanas</item>
+        <item>4 semanas</item>
+        <item>5 semanas</item>
+        <item>6 semanas</item>
+        <item>7 semanas</item>
+        <item>8 semanas</item>
+        <item>9 semanas</item>
+        <item>10 semanas</item>
+        <item>11 semanas</item>
+        <item>12 semanas</item>
+        <item>13 semanas</item>
+        <item>14 semanas</item>
+        <item>15 semanas</item>
+        <item>16 semanas</item>
+        <item>17 semanas</item>
+        <item>18 semanas</item>
+        <item>19 semanas</item>
+        <item>20 semanas</item>
+        <item>21 semanas</item>
+        <item>22 semanas</item>
+        <item>23 semanas</item>
+        <item>24 semanas</item>
+        <item>25 semanas</item>
+        <item>26 semanas</item>
+        <item>27 semanas</item>
+        <item>28 semanas</item>
+        <item>29 semanas</item>
+        <item>30 semanas</item>
+        <item>31 semanas</item>
+        <item>32 semanas</item>
+        <item>33 semanas</item>
+        <item>34 semanas</item>
+        <item>35 semanas</item>
+        <item>36 semanas</item>
+    </array>
+    <!-- Lista frecuencia medicamento-->
+    <array name="frecuencia_medicamento">
+        <item></item>
+        <item>1 Dosis/día</item>
+        <item>2 Dosis/día</item>
+        <item>3 Dosis/día</item>
+        <item>4 Dosis/día</item>
+        <item>5 Dosis/día</item>
+        <item>6 Dosis/día</item>
+        <item>1 Dosis/semana</item>
+        <item>2 Dosis/semana</item>
+        <item>3 Dosis/semana</item>
+        <item>4 Dosis/semana</item>
+        <item>1 Dosis/mes</item>
+        <item>2 Dosis/mes</item>
+        <item>3 Dosis/mes</item>
+
+    </array>
 </resources>
+

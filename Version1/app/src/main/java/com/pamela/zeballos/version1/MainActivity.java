@@ -31,6 +31,7 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import java.util.ArrayList;
 
+import utils.OnButtonPressedListener;
 import views.antecedentesEnfermedades.AntecedentesEnfermedadesFragment;
 import views.configuracion.ConfiguracionFragment;
 import views.reportes.ReportesFragment;
@@ -38,11 +39,8 @@ import views.usuario.UsuarioFragment;
 import views.visitaMedica.VisitaMedicaFragment;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends ActionBarActivity implements OnButtonPressedListener {
 
-    /**
-     * Fragment managing the behaviors, interactions and presentation of the navigation drawer.
-     */
     private NavigationDrawerFragment mNavigationDrawerFragment;
 
     private String[] titulos;
@@ -55,10 +53,6 @@ public class MainActivity extends ActionBarActivity {
 
     private ActionBarDrawerToggle mDrawerToggle;
 
-
-    /**
-     * Used to store the last screen title. For use in {@link #restoreActionBar()}.
-     */
     private CharSequence mTitle;
 
     public MainActivity() {
@@ -146,6 +140,7 @@ public class MainActivity extends ActionBarActivity {
         ShowFragment(0);
 
     }
+
 
     private void ShowFragment(int position){
         FragmentManager fragmentManager = getSupportFragmentManager();
@@ -260,4 +255,8 @@ public class MainActivity extends ActionBarActivity {
     }
 
 
+    @Override
+    public void onButtonPressed(String msg) {
+
+    }
 }

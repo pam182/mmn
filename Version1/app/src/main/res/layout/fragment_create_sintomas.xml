@@ -3,20 +3,6 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
 
-    <ListView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/listView" />
-
-    <TextView
-        android:text="@string/otro"
-        android:id="@+id/textView4"
-        style="@style/style_textView" />
-
-    <EditText
-        android:id="@+id/fecha_et"
-        style="@style/style_editText"/>
-
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="fill_parent"
@@ -32,7 +18,7 @@
 
             <Button
                 style="@style/style_icon_button"
-                android:id="@+id/aceptar"
+                android:id="@+id/btn_accept"
                 android:text="@string/icon_aceptar" />
         </LinearLayout>
 
@@ -45,12 +31,22 @@
 
             <Button
                 style="@style/style_icon_button"
-                android:id="@+id/cancelar"
+                android:id="@+id/btn_cancel"
                 android:text="@string/icon_cancelar"
                 />
         </LinearLayout>
 
     </LinearLayout>
+
+    <TextView
+        android:text="@string/sintomas"
+        android:id="@+id/textView4"
+        style="@style/style_textView" />
+
+    <EditText
+        android:id="@+id/et_sintomas"
+        style="@style/style_editText"
+        android:focusable="false"/>
 
 </LinearLayout>
 

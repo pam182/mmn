@@ -21,7 +21,7 @@
 
             <Button
                 style="@style/style_icon_button"
-                android:id="@+id/anadir"
+                android:id="@+id/btn_anadir"
                 android:text="@string/icon_anadir" />
         </LinearLayout>
 

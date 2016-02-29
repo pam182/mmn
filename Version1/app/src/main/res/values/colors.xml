@@ -21,5 +21,6 @@
 
     <color name="black_overlay">#66000000</color>
     <color name="listen_title">#FF7A9AA6</color>
+    <color name="datepicker_divider">#7d774f</color>
 
 </resources>

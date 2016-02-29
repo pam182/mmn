@@ -8,7 +8,7 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/fragment_one"
+        android:id="@+id/fragment_one_tratamientos"
         android:visibility="visible"
         android:gravity="right">
 
@@ -21,7 +21,7 @@
 
             <Button
                 style="@style/style_icon_button"
-                android:id="@+id/anadir"
+                android:id="@+id/btn_anadir"
                 android:text="@string/icon_anadir" />
         </LinearLayout>
 
@@ -36,7 +36,7 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/fragment_two"
+        android:id="@+id/fragment_two_tratamientos"
         android:visibility="gone" >
 
         <fragment

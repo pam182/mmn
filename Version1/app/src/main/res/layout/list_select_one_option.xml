@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    style="@style/style_textView">
+    style="@style/style_select_one_choice">
 
     <TextView
         android:layout_width="match_parent"
@@ -10,6 +10,11 @@
         android:textColor="#FFFFCC"
         android:text="@string/seleccione_opcion"
         android:id="@+id/textView" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#FFFFCC"
+        android:layout_margin="5dp"/>
 
     <ListView
         android:layout_width="wrap_content"

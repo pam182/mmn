@@ -12,63 +12,26 @@ import android.widget.Button;
 
 import com.pamela.zeballos.version1.R;
 
+import butterknife.ButterKnife;
+import butterknife.OnClick;
+
 /**
  * A simple {@link Fragment} subclass.
  */
-public class ExamenesComplementariosFragment extends Fragment implements View.OnClickListener{
-    Button goBackButton;
-    Button finishButton;
-    Button fragment_one_button;
-    Boolean primeroCerrado = true;
+public class ExamenesComplementariosFragment extends Fragment{
+
     View view;
 
     public ExamenesComplementariosFragment() {
-        // Required empty public constructor
     }
-
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.fragment_examenes_complementarios, container, false);
-        goBackButton = (Button) view.findViewById(R.id.goBack);
-        goBackButton.setOnClickListener(this);
-        finishButton = (Button) view.findViewById(R.id.finish);
-        finishButton.setOnClickListener(this);
-        fragment_one_button = (Button) view.findViewById(R.id.one);
-        fragment_one_button.setOnClickListener(this);
+        ButterKnife.bind(this, view);
         return view;
     }
 
-
-    @Override
-    public void onClick(View v) {
-        switch (v.getId()) {
-
-            case R.id.goBack:
-                cerrarFragment();
-
-                break;
-            case R.id.finish:
-                cerrarFragment();
-                break;
-            case R.id.one:
-                if(primeroCerrado){
-                    showFragmentOne();
-                }else
-                    cerrarTodo();
-                break;
-            default:
-
-                break;
-
-        }
-    }
-    public void showFragmentOne(){
-        view.findViewById(R.id.fragment_one).setVisibility(View.VISIBLE);
-//        view.findViewById(R.id.fragment_two).setVisibility(View.GONE);
-        this.primeroCerrado = false;
-    }
     public void cerrarFragment(){
         try {
             FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
@@ -78,10 +41,15 @@ public class ExamenesComplementariosFragment extends Fragment implements View.On
             throwable.printStackTrace();
         }
     }
-    public void cerrarTodo(){
-        view.findViewById(R.id.fragment_one).setVisibility(View.GONE);
-      //  view.findViewById(R.id.fragment_two).setVisibility(View.GONE);
-        this.primeroCerrado = true;
-      //  this.segundoCerrado = true;
+
+    @OnClick(R.id.goBack)
+    public void onBack(){
+        cerrarFragment();
     }
+
+    @OnClick(R.id.finish)
+    public void onFinish(){
+        cerrarFragment();
+    }
+
 }

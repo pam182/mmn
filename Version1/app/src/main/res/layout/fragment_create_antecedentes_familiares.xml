@@ -2,14 +2,50 @@
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_margin="10dp" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <Button
+                style="@style/style_icon_button"
+                android:id="@+id/btn_accept"
+                android:text="@string/icon_aceptar"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <Button
+                style="@style/style_icon_button"
+                android:id="@+id/btn_cancel"
+                android:text="@string/icon_cancelar" />
+        </LinearLayout>
+    </LinearLayout>
+
     <TextView
         android:text="@string/parentesco"
         android:id="@+id/textView4"
         style="@style/style_textView" />
 
     <EditText
-        android:id="@+id/fecha_et"
-        style="@style/style_editText"/>
+        android:id="@+id/et_parentesco"
+        style="@style/style_editText"
+        android:focusable="false"/>
 
     <TextView
         android:text="@string/enfermedad"
@@ -17,8 +53,9 @@
         style="@style/style_textView"/>
 
     <EditText
-        android:id="@+id/altura_et"
-        style="@style/style_editText"/>
+        android:id="@+id/et_enfermedad_parentesco"
+        style="@style/style_editText"
+        android:focusable="false"/>
 
     <TextView
         android:text="@string/fecha"
@@ -26,42 +63,10 @@
         style="@style/style_textView"/>
 
     <EditText
-        android:id="@+id/peso_et"
-        style="@style/style_editText"/>
+        android:id="@+id/et_fecha"
+        style="@style/style_editText"
+        android:focusable="false"/>
 
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:weightSum="2">
-
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-
-            <Button
-                style="@style/style_button"
-                android:id="@+id/aceptar"
-                android:text="@string/aceptar"
-                />
-        </LinearLayout>
-∑
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-
-            <Button
-                style="@style/style_button"
-                android:id="@+id/cancelar"
-                android:text="@string/cancelar"
-                />
-        </LinearLayout>
-
-    </LinearLayout>
 </LinearLayout>
 
 

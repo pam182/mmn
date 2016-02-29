@@ -27,12 +27,5 @@ public class ViewUtil {
         ft.replace(R.id.container, new HomeFragment().newInstance(0)).commit();
     }
 
-    public static void showSelectOneOption(Context context){
-        System.out.println("------------ 2");
-        FragmentManager fragmentManager = ((MainActivity)context).getSupportFragmentManager();
-        System.out.println("------------ 3");
-        ListSelectOneOption listOneOption = ListSelectOneOption.newInstance("titulo seleccione");
-        listOneOption.show(fragmentManager,"list_select_one_option");
-        System.out.println("------------ 9");
-    }
+
 }

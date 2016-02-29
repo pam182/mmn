@@ -2,14 +2,49 @@
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_margin="10dp" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <Button
+                style="@style/style_icon_button"
+                android:id="@+id/btn_accept"
+                android:text="@string/icon_aceptar" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <Button
+                style="@style/style_icon_button"
+                android:id="@+id/btn_cancel"
+                android:text="@string/icon_cancelar" />
+        </LinearLayout>
+    </LinearLayout>
+
     <TextView
         android:text="@string/centro_medico"
         android:id="@+id/textView4"
         style="@style/style_textView" />
 
     <EditText
-        android:id="@+id/fecha_et"
-        style="@style/style_editText"/>
+        android:id="@+id/et_centro_medico"
+        style="@style/style_text_number" />
 
     <TextView
         android:text="@string/especialidad"
@@ -17,8 +52,9 @@
         style="@style/style_textView"/>
 
     <EditText
-        android:id="@+id/altura_et"
-        style="@style/style_editText"/>
+        android:id="@+id/et_especialidad"
+        style="@style/style_editText"
+        android:focusable="false"/>
 
     <TextView
         android:text="@string/nombre_doctor"
@@ -26,8 +62,8 @@
         style="@style/style_textView"/>
 
     <EditText
-        android:id="@+id/peso_et"
-        style="@style/style_editText"/>
+        android:id="@+id/et_nombre_doctor"
+        style="@style/style_only_text" />
 
     <TextView
         style="@style/style_textView"
@@ -36,7 +72,8 @@
 
     <EditText
         style="@style/style_editText"
-        android:id="@+id/editText" />
+        android:id="@+id/et_fecha_consulta"
+        android:focusable="false"/>
 
 </LinearLayout>
 

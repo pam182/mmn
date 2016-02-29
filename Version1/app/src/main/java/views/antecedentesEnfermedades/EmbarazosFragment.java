@@ -12,13 +12,18 @@ import android.widget.Button;
 
 import com.pamela.zeballos.version1.R;
 
+import butterknife.Bind;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
+import utils.TypeFaceFont;
+import utils.ViewUtil;
+
 /**
  * A simple {@link Fragment} subclass.
  */
-public class EmbarazosFragment extends Fragment implements View.OnClickListener {
-    Button anadirButton;
-    Button aceptarCreatePatologicoButton;
-    Button cancelarcreatePatologicoButton;
+public class EmbarazosFragment extends Fragment{
+    @Bind(R.id.btn_anadir)
+    Button btnAnadir;
 
     public EmbarazosFragment() {
         // Required empty public constructor
@@ -29,49 +34,19 @@ public class EmbarazosFragment extends Fragment implements View.OnClickListener 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_embarazos, container, false);
-        anadirButton = (Button) view.findViewById(R.id.anadir);
-        anadirButton.setOnClickListener(this);
-        aceptarCreatePatologicoButton = (Button) view.findViewById(R.id.aceptarCreatePatologicoButton);
-        aceptarCreatePatologicoButton.setOnClickListener(this);
-        cancelarcreatePatologicoButton = (Button) view.findViewById(R.id.cancelarCreatePatologigoButton);
-        cancelarcreatePatologicoButton.setOnClickListener(this);
-
-
-        Typeface font = Typeface.createFromAsset(getActivity().getAssets(), "fontawesome-webfont.ttf");
-        anadirButton.setTypeface(font);
-        aceptarCreatePatologicoButton.setTypeface(font);
-        cancelarcreatePatologicoButton.setTypeface(font);
+        ButterKnife.bind(this, view);
+        TypeFaceFont.setFontawesome(getActivity(), btnAnadir);
         return view;
     }
 
-
-    @Override
-    public void onClick(View v) {
-        switch (v.getId()) {
-
-            case R.id.anadir:
-                showFragmentTwo();
-                break;
-            case R.id.aceptarCreatePatologicoButton:
-                showFragmentOne();
-                break;
-            case R.id.cancelarCreatePatologigoButton:
-                showFragmentOne();
-                break;
-
-            default:
-
-                break;
-
-        }
+    @OnClick(R.id.btn_anadir)
+    public void onAnadir() {
+        showCreateFragment();
     }
 
-    public void showFragmentOne(){
-        getActivity().findViewById(R.id.fragment_create_embarazo).setVisibility(View.GONE);
-        getActivity().findViewById(R.id.fragment_list_embarazo).setVisibility(View.VISIBLE);
-    }
-    public void showFragmentTwo(){
-        getActivity().findViewById(R.id.fragment_list_embarazo).setVisibility(View.GONE);
+    public void showCreateFragment(){
         getActivity().findViewById(R.id.fragment_create_embarazo).setVisibility(View.VISIBLE);
+        getActivity().findViewById(R.id.fragment_list_embarazo).setVisibility(View.GONE);
     }
+
 }

@@ -2,29 +2,23 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.pamela.zeballos.version1">
 
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
     <application
-        android:name=".StarterApplication"
         android:allowBackup="true"
         android:icon="@drawable/icon_app"
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name">
-
-        </activity>
-        <activity android:name=".LoginActivity"></activity>
+            android:label="@string/app_name" />
+        <activity android:name=".LoginActivity" />
         <activity android:name=".SplashActivity">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="views.visitaMedica.CameraPhotoCapture"></activity>
     </application>
 
 </manifest>
